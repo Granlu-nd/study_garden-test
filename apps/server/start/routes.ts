@@ -100,7 +100,9 @@ router.get("/docs", async () => {
   // return AutoSwagger.default.rapidoc("/swagger", "view"); to use RapiDoc instead (pass "view" default, or "read" to change the render-style)
 });
 
-
+router.get('/api/hello', async () => {
+  return { message: 'Hello from Adonis!' }
+})
 
 
 
