@@ -100,8 +100,9 @@ router.get("/docs", async () => {
   // return AutoSwagger.default.rapidoc("/swagger", "view"); to use RapiDoc instead (pass "view" default, or "read" to change the render-style)
 });
 
+// Test endpoint vite + adonis connection
 router.get('/api/hello', async () => {
-  return { message: 'Hello from Adonis!' }
+  return { message: 'Hello from Adonis! v1.0' }
 })
 
 
